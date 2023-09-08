@@ -9,7 +9,7 @@ int main(void)
 int letter;
 for (letter = 0; letter <= 9; letter++)
 {
-printf("%d ", letter);
+printf("%d", letter);
 }
 printf("\n");
 return (0);
