@@ -11,7 +11,9 @@ for (digit = 0; digit <= 9; digit++)
 putchar('0' + digit);
 if (digit < 9)
 {
-putchar(digit + 1 == 10 ? '$' : ',');
+putchar(',');
+putchar(' ');
+}
 }
 }
 putchar('\n');
