@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - 0-positive_or_negative.c
- * description - this code will check 0 and n
+ * main - 0-positive_or_negative
+ * description - Write a C program that prints exactly
  *
- *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
