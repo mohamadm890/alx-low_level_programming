@@ -11,12 +11,7 @@ for (digit = 0; digit <= 9; digit++)
 putchar('0' + digit);
 if (digit < 9)
 {
-putchar(',');
-putchar(' ');
-}
-else
-{
-putchar('$');
+putchar(digit + 1 == 10 ? '$' : ',');
 }
 }
 putchar('\n');
