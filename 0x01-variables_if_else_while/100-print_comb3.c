@@ -12,9 +12,9 @@ while (n <= 56)
 m = n + 1;
 while (m <= 57)
 {
+putchar(' ');
 putchar(n);
 putchar(m);
-putchar(' ');
 putchar((n != 56 || m != 57) ? ',' : '\n');
 m++;
 }
