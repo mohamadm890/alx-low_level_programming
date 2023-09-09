@@ -13,7 +13,7 @@ while (secondDigit <= 9)
 printf("%d%d", firstDigit, secondDigit);
 if (firstDigit != 8 || secondDigit != 9)
 {
-printf(",  ");
+printf(", ");
 }
 secondDigit++;
 }
