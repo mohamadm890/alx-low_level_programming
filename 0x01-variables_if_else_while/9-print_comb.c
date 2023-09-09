@@ -3,22 +3,19 @@
  * main - prints all possible combinations of single-digit numbers
  * Return: Always 0 (Success)
  */
-int main(void)
+int main()
 {
-int firstDigit = 0, secondDigit = 1;
-while (firstDigit <= 8)
+int digit = 0;
+while (digit <= 9)
 {
-while (secondDigit <= 9)
+putchar('0' + digit);
+if (digit < 9)
 {
-printf("%d%d", firstDigit, secondDigit);
-if (firstDigit != 8 || secondDigit != 9)
-{
-printf(", ");
+putchar(',');
+putchar(' ');
 }
-secondDigit++;
+digit++;
 }
-firstDigit++;
-secondDigit = firstDigit + 1;
-}
+putchar('\n');
 return (0);
 }
