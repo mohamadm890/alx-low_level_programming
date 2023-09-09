@@ -3,17 +3,22 @@
  * main - prints all possible combinations of single-digit numbers
  * Return: Always 0 (Success)
  */
-#include <stdio.h>
 int main(void)
 {
-for (char d = '0'; d <= '8'; d++)
+int firstDigit = 0, secondDigit = 1;
+while (firstDigit <= 8)
 {
-for (char p = d + 1; p <= '9'; p++)
+while (secondDigit <= 9)
 {
-putchar(d);
-putchar(p);
-putchar((d == '8' && p == '9') ? '\n' : ',');
+printf("%d%d", firstDigit, secondDigit);
+if (firstDigit != 8 || secondDigit != 9)
+{
+printf(", ");
 }
+secondDigit++;
+}
+firstDigit++;
+secondDigit = firstDigit + 1;
 }
 return (0);
 }
