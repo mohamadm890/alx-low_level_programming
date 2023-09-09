@@ -1,24 +1,23 @@
 #include <stdio.h>
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - prints all possible different combinations of two digits
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-int firstDigit = 0, secondDigit = 1;
-while (firstDigit <= 8)
+int n = 48;
+int m;
+while (n <= 56)
 {
-while (secondDigit <= 9)
+m = n + 1;
+while (m <= 57)
 {
-printf("%d%d", firstDigit, secondDigit);
-if (firstDigit != 8 || secondDigit != 9)
-{
-printf(", ");
+putchar(n);
+putchar(m);
+putchar((n != 56 || m != 57) ? ',' : '\n');
+m++;
 }
-secondDigit++;
-}
-firstDigit++;
-secondDigit = firstDigit + 1;
+n++;
 }
 return (0);
 }
