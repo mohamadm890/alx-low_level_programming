@@ -5,16 +5,20 @@
  */
 int main(void)
 {
-int digit;
-for (digit = 0; digit <= 9; digit++)
+int firstDigit = 0, secondDigit = 1;
+while (firstDigit <= 8)
 {
-putchar('0' + digit);
-if (digit < 9)
+while (secondDigit <= 9)
 {
-putchar(',');
-putchar(' ');
+printf("%d%d", firstDigit, secondDigit);
+if (firstDigit != 8 || secondDigit != 9)
+{
+printf(", ");
 }
+secondDigit++;
 }
-putchar('\n');
+firstDigit++;
+secondDigit = firstDigit + 1;
+}
 return (0);
 }
