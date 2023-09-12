@@ -6,12 +6,12 @@
  *
  * Return: Always 0.
  */
-int print_alphabet(void)
+void print_alphabet(void)
 {
-int letter;
-for (letter = 'a'; letter <= 'z'; i++)
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
 {
-putchar(letter);
+_putchar(letter);
 }
-putchar('\n');
+_putchar('\n');
 }
