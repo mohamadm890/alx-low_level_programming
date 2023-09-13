@@ -1,22 +1,22 @@
 #include "main.h"
 /**
- * main - 0-positive_or_negative
+ * main - positive_or_negative
  * description - Write a C program that prints exactly
  *
  * Return: Always 0 (Success)
  */
 void  positive_or_negative(int i)
 {
-if ( i > 0)
+if (i > 0)
 {
-printf("%d is positive\n",i);
+printf("%d is positive\n", i);
 }
-else if ( i < 0)
+else if (i < 0)
 {
-printf("%d is negative\n",i);
+printf("%d is negative\n", i);
 }
-else 
+else
 {
-printf("%d is zero\n",i);
+printf("%d is zero\n", i);
 }
 }
