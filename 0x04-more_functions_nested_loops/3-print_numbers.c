@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - check the code
  *
- * Return: list of 14 10times.
+ * Return: Always 0.
  */
 int main(void)
 {
