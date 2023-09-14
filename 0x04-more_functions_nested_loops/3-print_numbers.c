@@ -4,12 +4,12 @@
  *
  * Return: Always 0.
  */
-int print_numbers(void)
+void print_numbers(void)
 {
-int i;
-for (i = 0; i <= 9; i++)
+int c;
+for (c = 48; c < 58; c++)
 {
-_putchar(i);
+_putchar(c);
 }
 _putchar('\n');
 }
