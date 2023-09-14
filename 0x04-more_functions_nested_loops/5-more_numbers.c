@@ -11,7 +11,7 @@ for (int i = 0 ; i <= 10; i++)
 {
 for (int j = 0 ; j <= 14; j++)
 {
-_putchar("%d", j);
+_putchar(j);
 }
 _putchar("\n");
 }
