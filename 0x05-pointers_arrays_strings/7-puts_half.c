@@ -17,4 +17,5 @@ for (int i = mid; i < len; i++)
 {
 _putchar("%c", str[i]);
 }
+_putchar('\n');
 }
