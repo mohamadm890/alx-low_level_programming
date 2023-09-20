@@ -1,0 +1,1 @@
+more array and pointer
