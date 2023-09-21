@@ -8,20 +8,20 @@
  *
  * Return: dest
  */
-char  _strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, const char *src, int n)
 {
-int f = 0;
-while (dest[f] != '\0')
+int i = 0;
+int j = 0;
+while (dest[i] != '\0')
 {
-f++;
+i++;
 }
-int m = 0;
-while (src[m] != '\0' && m < n)
+while (j < n && src[j] != '\0')
 {
-dest[f] = src[m];
-f++;
-m++;
+dest[i] = src[j];
+i++;
+j++;
 }
-dest[f] = '\0';
+dest[i] = '\0';
 return (dest);
 }
