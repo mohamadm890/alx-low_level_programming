@@ -9,7 +9,7 @@
  */
 char *_strncpy(char *dest, const char *src, int n)
 {
-if (dest == 'NULL' || src == 'NULL' || n == 0)
+if (dest == NULL || src == NULL || n == 0)
 {
 return (dest);
 }
