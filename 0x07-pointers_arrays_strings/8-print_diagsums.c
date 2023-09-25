@@ -22,7 +22,7 @@ count1 = count1 + a[i * size + i];
 }
 for (i = size - 1; i >= 0; i--)
 {
-count2 += a[x * size + (size - x - 1)];
+count2 += a[i * size + (size - i - 1)];
 }
 printf("%d, %d\n", count1, count2);
 }
