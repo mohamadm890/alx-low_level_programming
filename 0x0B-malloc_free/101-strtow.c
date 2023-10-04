@@ -40,7 +40,7 @@ len++;
 words = count_word(str);
 if (words == 0)
 return (NULL);
-matr = (char **) malloc(sizeof(char *) * (words +));
+matr = (char **) malloc(sizeof(char *) * (words + 1));
 if (matr == NULL)
 return (NULL);
 for (i = 0; i <= len; i++)
