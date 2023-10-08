@@ -15,7 +15,7 @@ if (min > max)
 return (NULL);
 size = max - min + 1;
 p = malloc(sizeof(int) * size);
-if (ptr == NULL)
+if (p == NULL)
 return (NULL);
 for (i = 0; min <= max; i++)
 p[i] = min++;
