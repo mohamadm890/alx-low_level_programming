@@ -9,18 +9,12 @@
  */
 size_t print_listint(const listint_t *h)
 {
-int count = 0;
-if (h == NULL)
+size_t num = 0;
+while(h)
 {
-printf("there is nothing to see here");
+printf("%d\n", h->n);
+num++;
+h = h->next;
 }
-struct listint_s *ptr = NULL;
-ptr = h;
-while (ptr != NULL)
-{
-printf("%d\n", ptr->n);
-ptr = ptr->next;
-count++;
-}
-return (count);
+return (num);
 }
