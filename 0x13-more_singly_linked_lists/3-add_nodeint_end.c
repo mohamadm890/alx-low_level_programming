@@ -22,11 +22,9 @@ if (*head == NULL)
 *head = node;
 return (node);
 }
-else
-{
 while (p->next)
 p = p->next;
 p->next = node;
 return (node);
-}
+
 }
