@@ -20,7 +20,7 @@ if (text_content == NULL)
 {
 text_content = "";
 }
-while (text_content == '\0')
+while (text_content != '\0')
 {
 i++;
 }
