@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * print_dlistint - prints all the elements of a dlistint_t list.
  * @h: pointer to the list.
@@ -11,7 +10,7 @@ const  dlistint_t *node = h;
 size_t count = 0;
 while(node)
 {
-print("%i/n", node->n)
+print("%i\n", node->n)
 count++;
 node = node->next;
 }
