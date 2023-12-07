@@ -12,7 +12,7 @@ size_t count = 0;
 while (node)
 {
 count++;
-next = node->next;
+node = node->next;
 }
 return (count);
 }
