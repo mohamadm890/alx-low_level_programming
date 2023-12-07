@@ -10,7 +10,7 @@ const  dlistint_t *node = h;
 size_t count = 0;
 while(node)
 {
-print("%i\n", node->n)
+printf("%i\n", node->n);
 count++;
 node = node->next;
 }
